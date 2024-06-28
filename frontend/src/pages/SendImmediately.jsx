@@ -20,7 +20,7 @@ const SendImmediately = () => {
         return;
       }
       const res = await axios.post(
-        "http://localhost:8000/api/v1/email/sendmail",
+        "https://backend-email-4.onrender.com/api/v1/email/sendmail",
         {
           to,
           subject,
