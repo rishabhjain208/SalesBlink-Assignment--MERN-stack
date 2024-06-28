@@ -14,7 +14,7 @@ const AuthofSignupandSignin = ({ type }) => {
   async function sendRequest() {
     try {
       const response = await axios.post(
-        `http://localhost:8000/api/v1/auth/${type}`,
+        `https://backend-email-4.onrender.com/api/v1/auth/${type}`,
         inputs
       );
       const jwt = response.data.token;
